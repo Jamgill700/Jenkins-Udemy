@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage("Stage 1") {
             steps {
-                    sh 'pwsh --version'
+                    sh 'python3 --version'
             }
         }
         stage("Stage 2") {
             steps {
                     echo "This is stage 2"
-                    sh 'pwsh test.ps1'
+                    sh 'python3 hello.py'
             }
         }
         stage("Stage 3") {
