@@ -3,12 +3,13 @@ pipeline {
     stages {
         stage("Stage 1") {
             steps {
-                    sh 'list.groovy'
+                    sh "pwsh --version"
             }
         }
         stage("Stage 2") {
             steps {
                     echo "This is stage 2"
+                    sh 'pwsh test.ps1'
             }
         }
         stage("Stage 3") {
