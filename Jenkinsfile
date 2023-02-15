@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Stage 1") {
             steps {
-                    sh "pwsh --version"
+                    sh 'pwsh --version'
             }
         }
         stage("Stage 2") {
